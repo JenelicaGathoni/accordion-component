@@ -8,7 +8,7 @@ h1{
 }
 body{
     background-color: beige;
-    background-image: url(/images/blue\ plant.png);
+    background-image: url(blue\ plant.png);
 }
 .label{
     font-size: larger;
