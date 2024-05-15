@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+body{
+    background-color: beige;
+    background-image: url(/images/blue\ plant.png);
+}
+.label{
+    font-size: larger;
+    font-weight: 530;
+    position: relative;
+    cursor: pointer;
+
+}
+.answers{
+    margin: 90px auto;
+    width: 850px;
+    padding: 45px;
+    color:azure;
+    background-color: rgb(3, 3, 76);
+    position: relative;
+}
+.content{
+    margin-bottom: 7px;
+    text-align: justify;
+    height: 0;
+    overflow: hidden;
+    border-bottom: 1px solid azure;
+    transition:height 0.5s ease;
+    width: 780px;
+    
+}
+.label::before{
+    content: '👇';
+    position: absolute;
+    top: 50%;
+    right: -3px;
+   transform: translateY( -50%); 
+}
+.answers .active .content{
+    height: auto;
+    transition:height 0.5s ease;
+}
